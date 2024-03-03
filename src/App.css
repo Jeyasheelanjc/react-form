@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+.formContainer input[type=text],input[type=email],input[type=number],input[type=age],input[type=password]{
+  width: 100% !important;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  background: none;
+  color: black;
+}
+.formContainer input::placeholder{
+  color: black !important;
+}
+.formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #3d4b91;
+}
+.wid{
+  max-width: 350px !important;
+  margin: 0;
+  color: red;
+  font-size: 12px;
+}
+.formscenter{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.but1{
+  background-color: #3d4b91;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.but1:hover{
+  background-color: #7a87c7;
+  transition: .5s ease-in-out;
+}
+table{
+  border: 1px solid black;
+}
+th,td{
+  border: 1px solid black;
+}
+.bt{
+  border-radius: 5px;
+  border: none;
+  background-color: #7a87c7;
+  color: #fff;
+  font-weight: bold;
+}
+.bt1{
+  border-radius: 5px;
+  border: none;
+  background-color:rgba(255, 0, 0, 0.733);
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (max-width:576px) {
+  .formscenter{
+    width: 350px;
+  }
+}
